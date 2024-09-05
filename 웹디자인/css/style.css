@@ -12,7 +12,7 @@ body{
     overflow-x:  hidden;
 }
 .back{
-    
+    /* z-index: 2; */
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
@@ -72,37 +72,39 @@ div.circle:hover {
 .one p:first-child{
     margin-top: 60px;
 }
-#title:hover{
+#title>li:hover{
     font-weight: bold;
 }
-#title h1{
+#title>li{
     width: 1000px;
 }
-#title2 h1{
+#title2>li{
     width: 400px;
 }
-#title{
+#title>li{
     position: relative; top: 0; left: 100px;
     width: 600px; height: 70px;
     margin-top: 100px;
     margin-left: 100px;
-    font-size: 3rem;
     text-indent: 50px;    
     animation: title_ani 1s;
-    font-size: 100px;
+    font-size: 200px;
+    font-weight: bold;
     
 }
-#title2{
+#title2>li{
+    margin-top: 100px;
     animation: title_ani2 1s;
-    font-size: 100px;
+    font-size: 200px;
     position: relative;
     width: 600px; height: 70px;
-    top: 0; left: 800px;
+    top: 0; left: 1200px;
+    font-weight: bold;
  
 }
 @keyframes title_ani2{
     0% {left: -100px;}
-    100% {left: 800px;}
+    100% {left: 1200px;}
 
 }
 @keyframes title_ani{
@@ -115,21 +117,29 @@ div.circle:hover {
     100% {left: 100px;}
 
 }
-
-#title:hover ~ .subtitle{
-    display: block;
+.bg{
+    position: absolute;
+    background-color: white;
+    width: 60%;
+    height: 60%;
+    border-radius: 100%;
+    left: 50%;
+    top: -50%;
+    display: none;
+    opacity: 0.5;
     
 }
-
 .subtitle{
-    display: none;
-    margin-top: 300px;
+    width: 1000px; height: 500px;
+    
+    left: -700px;
+    
+    margin-top: 100px;
     position: absolute;
-    animation: title_ani3 1s;
-    left: 100px;
+    transition: all 0.8s;
 }
-.subtitle li{
+.subtitle>li{
     font-size: 40px;
     margin-top: 10px;
-    animation: title_ani3 1s;
+    
 }
