@@ -17,7 +17,7 @@ body{
     top: 0; left: 0;
     width: 100%; height: 100%;
     border: 0px solid red;
-    background: -webkit-linear-gradient(top,rgb(125, 224, 228),white);
+    background: -webkit-linear-gradient(top,rgb(125, 195, 228),white);
 }
 .one{
     position: absolute; top: -350px; right: -150px;
@@ -43,34 +43,106 @@ div.circle:hover {
     inset 0 0 0 500px rgba(25, 40, 88, 0.5);
 }
 
-.one1{
+div.circle1 {
     
-    position: absolute; top: -150px; right: -550px;
-    width: 1000px; height: 1000px;
-    
-    border-radius: 100%;
-    background-color: #577eff ; color: white;
-    text-align: center;
-    font-size: 1.5rem;
+    top: -150px; right: -550px;
+    width: 1000px; height: 1000px; border-radius: 50%;
+    background-color: rgb(226, 59, 137);
+    margin: 20px 30px; 
+    position: absolute;
+    transition: all 1s ease-in-out;
 }
-.one2{
-    
-    position: absolute; top: -550px; right: 150px;
-    width: 1000px; height: 1000px;
-    
-    border-radius: 100%;
-    background-color: #2d4aa8 ; color: white;
-    text-align: center;
-    font-size: 1.5rem;
-}
-.one p{
-    width: 100%; height: 30px;
-    line-height: 30px;
-    margin-top: 10px;
 
+div.circle1:hover {  
+    box-shadow: 
+    inset 0 0 0 500px rgba(88, 25, 69, 0.5);
 }
-.one p:first-child{
-    margin-top: 60px;
+
+div.circle2 {
+    
+    top: -550px; right: 150px;
+    width: 1000px; height: 1000px; border-radius: 50%;
+    background-color: rgb(230, 169, 78);
+    margin: 20px 30px; 
+    position: absolute;
+    transition: all 1s ease-in-out;
+}
+
+div.circle2:hover {  
+    box-shadow: 
+    inset 0 0 0 500px rgba(131, 113, 55, 0.5);
+}
+div.circle3 {
+    
+    top: 20px; right: 1500px;
+    width:300px; height: 300px; border-radius: 50%;
+    background-color: rgb(199, 58, 15);
+    margin: 20px 30px; 
+    position: absolute;
+    transition: all 1s ease-in-out;
+}
+
+div.circle3:hover {  
+    box-shadow: 
+    inset 0 0 0 200px rgba(88, 52, 38, 0.5);
+}
+div.circle4 {
+    
+    top: 600px; right: 800px;
+    width:100px; height: 100px; border-radius: 50%;
+    background-color: rgb(250, 216, 64);
+    margin: 20px 30px; 
+    position: absolute;
+    transition: all 1s ease-in-out;
+}
+
+div.circle4:hover {  
+    box-shadow: 
+    inset 0 0 0 50px rgba(95, 94, 31, 0.5);
+}
+div.circle4>li{
+    width: 30px; height: 20px;
+    position: absolute;
+    text-align: center;
+    width:100px; height: 100px; border-radius: 50%;
+    top: 40px;
+    font-weight: bold;
+}
+.menu{
+    position: absolute;
+    width: 700px;
+    height: 1000px;
+    border-right: 100px solid transparent;
+    border-bottom: 1000px solid rgb(221, 221, 221);
+    z-index: 1;
+    transition: all 0.8s;
+    left: -700px;
+}
+.bg{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    display: none;
+    opacity: 0.5;
+    
+}
+
+div.circle5 {
+    
+    top: 350px; right: 1300px;
+    width:30px; height: 30px; border-radius: 50%;
+    background-color: rgb(207, 64, 250);
+    margin: 20px 30px; 
+    position: absolute;
+    transition: all 1s ease-in-out;
+}
+
+div.circle5:hover {  
+    box-shadow: 
+    inset 0 0 0 30px rgba(75, 31, 95, 0.5);
 }
 #title>li:hover{
     font-weight: bold;
@@ -117,18 +189,7 @@ div.circle:hover {
     100% {left: 100px;}
 
 }
-.bg{
-    position: absolute;
-    background-color: white;
-    width: 60%;
-    height: 60%;
-    border-radius: 100%;
-    left: 50%;
-    top: -50%;
-    display: none;
-    opacity: 0.5;
-    
-}
+
 .subtitle{
     width: 1000px; height: 500px;
     
@@ -142,4 +203,10 @@ div.circle:hover {
     font-size: 40px;
     margin-top: 10px;
     
+}
+#title>li:hover{
+    color: white;
+}
+#title2>li:hover{
+    color: white;
 }
