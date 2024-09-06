@@ -17,3 +17,28 @@ $('.circle4').click(function(){
   $(".bg").fadeIn("slow"); // fadeIn slow 적용
   $(".bg").fadeIn(6000); // 시간설정 6초
 })
+$('.cbtn').click(function(){
+  $(".cbtn").fadeOut(); //기본 fadeIn 메소드
+  $(".cbtn").fadeOut("slow"); // fadeIn slow 적용
+  $(".cbtn").fadeOut(6000); // 시간설정 6초
+})
+$('.circle4').click(function(){
+  $(".cbtn").fadeIn(); //기본 fadeIn 메소드
+  $(".cbtn").fadeIn("slow"); // fadeIn slow 적용
+  $(".cbtn").fadeIn(6000); // 시간설정 6초
+})
+$('.cbtn').click(function(){
+  $('.menu').css({left:'-600px',opacity: '0',zIndex: '-1'});
+})
+$('.cbtn').click(function(){
+  $(".bg").fadeOut(); //기본 fadeIn 메소드
+  $(".bg").fadeOut("slow"); // fadeIn slow 적용
+  $(".bg").fadeOut(6000); // 시간설정 6초
+})
+$('.menu>li>a').mousehover(function(){
+  $('.smenu').ready().slideDown();
+}).mouseout(function(){
+  $('.smenu').ready().slideUp();
+});
+  
+
