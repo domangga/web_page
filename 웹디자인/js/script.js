@@ -35,10 +35,18 @@ $('.cbtn').click(function(){
   $(".bg").fadeOut("slow"); // fadeIn slow 적용
   $(".bg").fadeOut(6000); // 시간설정 6초
 })
-$('.menu>li>a').mousehover(function(){
-  $('.smenu').ready().slideDown();
+
+
+$('.m3').mouseover(function(){
+  $(this).find('.submenu1').stop().slideDown()
 }).mouseout(function(){
-  $('.smenu').ready().slideUp();
+  $(this).find('.submenu1').stop().slideUp()
+
 });
-  
+$('.m4').mouseover(function(){
+  $(this).find('.submenu2').stop().slideDown()
+}).mouseout(function(){
+  $(this).find('.submenu2').stop().slideUp()
+
+});  
 

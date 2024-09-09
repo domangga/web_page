@@ -291,22 +291,39 @@ top: 200px;
 }
 .menu>ul>li>a{
     color: black;
-    margin-top: 20px;
+    margin-top: 10px;
     left: 40px;
     position: absolute;
     font-size: 50px;
 }
-.submenu>li{
-
-    position: relative;  
+.submenu1{
+    position: absolute;
+    z-index: 2;
     display: none;
-
+    top: 100px;
 }
-.submenu>li:hover{
+.submenu2{
+    position: absolute;
+    z-index: 1;
+    display: none;
+    top: 100px;
+}
+
+.submenu1>li:hover{
     border-bottom: 100px solid rgb(158, 158, 158);
 }
-.submenu>li>a{
-    position: absolute;
+.submenu2>li:hover{
+    border-bottom: 100px solid rgb(158, 158, 158);
+}
+.submenu1>li>a{
+    /* position: absolute; */
+    margin-top: 25px;
+    font-size: 30px;
+    left: 100px;
+    color: black;
+}
+.submenu2>li>a{
+    /* position: absolute; */
     margin-top: 25px;
     font-size: 30px;
     left: 100px;
@@ -315,11 +332,15 @@ top: 200px;
 .sm31{
     z-index: 1;
     position: relative;
-    width: 650px;
+    width: 660px;
     height:30px;
     border-right: 10px solid transparent;
     border-bottom: 100px solid rgb(255, 255, 255);
     transition: all 0.5s ease-in-out;
+}
+.sm31>a{
+    position: absolute;
+    margin-top: 30px;
 }
 .sm31:hover{
     border-bottom: 100px solid rgb(158, 158, 158);
@@ -328,11 +349,16 @@ top: 200px;
 .sm32{
     z-index: 1;
     position: relative;
-    width: 660px;
+    
+    width: 670px;
     height:30px;
     border-right: 10px solid transparent;
     border-bottom: 100px solid rgb(255, 255, 255);
     transition: all 0.5s ease-in-out;
+}
+.sm32>a{
+    position: absolute;
+    margin-top: 30px;
 }
 .sm32:hover{
     border-bottom: 100px solid rgb(158, 158, 158);
@@ -341,12 +367,16 @@ top: 200px;
 .sm33{
     z-index: 1;
     position: relative;
-    width: 670px;
+    width: 680px;
     height:30px;
     border-right: 10px solid transparent;
     border-bottom: 100px solid rgb(255, 255, 255);
     transition: all 0.5s ease-in-out;
 
+}
+.sm33>a{
+    position: absolute;
+    margin-top: 30px;
 }
 .sm33:hover{
     border-bottom: 100px solid rgb(158, 158, 158);
@@ -355,12 +385,17 @@ top: 200px;
 .sm41{
     z-index: 1;
     position: relative;
-    width: 660px;
+    width: 670px;
     height:30px;
     border-right: 10px solid transparent;
     border-bottom: 100px solid rgb(255, 255, 255);
     transition: all 0.5s ease-in-out;
+   
 
+}
+.sm41>a{
+    position: absolute;
+    margin-top: 30px;
 }
 .sm41:hover{
     border-bottom: 100px solid rgb(158, 158, 158);
