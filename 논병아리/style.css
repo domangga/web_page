@@ -1,0 +1,20 @@
+*{
+    margin: 0; padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+.main{
+    width: 700px;
+    height: 400px;
+    background-color: antiquewhite;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+.main-name{
+    margin: 40px;
+}
+.main-year{
+    margin: 40px;
+}
